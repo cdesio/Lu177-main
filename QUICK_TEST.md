@@ -12,14 +12,14 @@ The pipeline is:
 
 ## Script Location
 
-- `/Users/yw18581/work/Lu177/run_full_lu177_quick_test.sh`
+- `PATH-TO/Lu177/run_full_lu177_quick_test.sh`
 
 ## What Must Be Installed
 
 ## System tools
 
 - `cmake`
-- C++ toolchain (compiler + make/ninja)
+- C++ toolchain (compiler + make)
 - Geant4 runtime/build dependencies available to CMake
 - `python3`
 
@@ -67,26 +67,26 @@ If you do not, the quick test may fail at clustering with missing module errors.
 Default run:
 
 ```bash
-/Users/yw18581/work/Lu177/run_full_lu177_quick_test.sh
+PATH-TO/Lu177/run_full_lu177_quick_test.sh
 ```
 
 Run with more decay primaries:
 
 ```bash
-EVENTS=200 /Users/yw18581/work/Lu177/run_full_lu177_quick_test.sh
+EVENTS=200 PATH-TO/Lu177/run_full_lu177_quick_test.sh
 ```
 
 Custom output directory:
 
 ```bash
-OUT_DIR=/Users/you/some/output/dir /Users/yw18581/work/Lu177/run_full_lu177_quick_test.sh
+OUT_DIR=/Users/you/some/output/dir PATH-TO/Lu177/run_full_lu177_quick_test.sh
 ```
 
 ## Outputs
 
 By default outputs go to:
 
-- `/Users/yw18581/work/Lu177/quick_test_runs/quick_test_<timestamp>/`
+- `/PATH-TO/Lu177/quick_test_runs/quick_test_<timestamp>/`
 
 Files include:
 
@@ -108,7 +108,7 @@ Install required Python modules in the environment used by `python3` (`numpy`, `
 Increase primaries:
 
 ```bash
-EVENTS=200 /Users/yw18581/work/Lu177/run_full_lu177_quick_test.sh
+EVENTS=200 /PATH-TO/Lu177/run_full_lu177_quick_test.sh
 ```
 
 ## 3) Clustering output path issues
